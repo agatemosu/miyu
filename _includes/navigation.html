@@ -1,0 +1,13 @@
+<nav>
+  <div class="navigation-pages">
+    {% for item in site.data.blue.navigation %}
+      <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+
+  {% for tongue in site.languages %}
+    <a class="navigation-lang {% if tongue == site.active_lang %}current{% endif %}" {% static_href %}href="{% if tongue == site.default_lang %}{{ site.baseurl }}{{ page.url }}{% else %}{{ site.baseurl }}/{{ tongue }}{{ page.url }}{% endif %}"{% endstatic_href %}>
+      {{ site.data.languages[tongue] }}
+    </a>
+  {% endfor %}
+</nav>

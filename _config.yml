@@ -1,0 +1,10 @@
+sass:
+  sourcemap: never
+
+plugins:
+  - jekyll-polyglot
+
+languages: ["en", "es", "ja"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+parallel_localization: false

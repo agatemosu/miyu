@@ -1,0 +1,39 @@
+footer {
+  background-color: #2196f3;
+  color: white;
+  font-size: 12px;
+  padding: 10px 0 5px;
+
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+
+  .footer-link {
+    font-weight: bold;
+    color: white;
+    margin: 0 10px;
+  }
+}
+
+nav {
+  background-color: #2196f3;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  a:link {
+    color: #ffcdd2;
+  }
+
+  .navigation-pages {
+    flex-grow: 1;
+  }
+
+  .navigation-lang {
+    margin-left: 4px;
+  }
+}

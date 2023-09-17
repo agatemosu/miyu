@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru");
+
+:root {
+  background: palevioletred;
+  font-family: "Kiwi Maru", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ ゴシック", "MS Gothic", HiraKakuProN-W3, "TakaoExゴシック", TakaoExGothic, "MotoyaLCedar", "Droid Sans Japanese", sans-serif;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1000px;
+
+  @media (max-width: 1016px) {
+    margin: 8px;
+    width: fit-content;
+  }
+}
+
+::selection {
+  color: white;
+  background: pink;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+
+  &:link {
+    color: #ffebee;
+  }
+
+  &:visited {
+    color: #ffcdd2;
+  }
+
+  &:focus, &:hover, &:active {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    background: #ef9a9a;
+  }
+
+  &.current {
+    color: #ffebee;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1016px) {
+  td:first-child {
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  td:last-child {
+    word-break: break-all;
+  }
+}

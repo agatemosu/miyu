@@ -1,0 +1,13 @@
+---
+layout: default
+title: ブログ
+permalink: /blog.html
+lang: ja
+---
+
+<h1>最新の投稿</h1>
+
+{% for post in site.posts %}
+  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+  {{ post.excerpt }}
+{% endfor %}

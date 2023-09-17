@@ -1,0 +1,8 @@
+<footer>
+  <div class="footer-row">
+    {% for item in site.data.blue.footer %}
+      <a href="{{ item.link }}" class="footer-link" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+  <div class="footer-row">© {{ site.data.blue.miyu }}</div>
+</footer>

@@ -1,0 +1,19 @@
+navigation:
+  - name: Home
+    link: /home.html
+  - name: About me
+    link: /about.html
+  - name: Blog
+    link: /blog.html
+
+miyu: Miyu-chan
+
+footer:
+  - name: GitHub
+    link: https://github.com/ghost
+  - name: YouTube
+    link: https://youtube.com/
+  - name: Twitch
+    link: https://twitch.tv/
+  - name: Source code
+    link: https://github.com/agatemosu/miyu
